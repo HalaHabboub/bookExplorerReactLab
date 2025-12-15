@@ -1,0 +1,43 @@
+nav {
+    display: flex;
+    justify-content: center;
+    /* Center links horizontally */
+    align-items: center;
+    background-color: #333;
+    /* Dark background */
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+/* Style for the <Link> components */
+nav a {
+    color: white;
+    /* White text for links */
+    text-decoration: none;
+    /* Remove underline */
+    padding: 8px 15px;
+    /* Spacing around the link text */
+    margin: 0 10px;
+    /* Space between links */
+    border-radius: 5px;
+    /* Slightly rounded corners */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition for hover effects */
+    font-weight: bold;
+}
+
+/* Hover effect */
+nav a:hover {
+    background-color: #555;
+    /* Slightly lighter background on hover */
+    color: #eee;
+}
+
+/* The separator "|" */
+nav span.separator {
+    color: #ccc;
+    /* Lighter color for the separator */
+    margin: 0 -5px;
+    /* Adjust margin to bring the links closer to the separator */
+}
