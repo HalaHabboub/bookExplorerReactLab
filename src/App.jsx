@@ -9,6 +9,7 @@ import Home from './Pages/Home.jsx';
 import Navbar from './Components/Navbar.jsx';
 import Footer from './Components/Footer.jsx';
 import Books from './Pages/Books.jsx';
+import Details from './Pages/Details.jsx';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/books" element={<Books />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/Details/:id" element={<Details />} />
         </Routes>
         <Footer />
       </BrowserRouter>

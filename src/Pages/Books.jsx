@@ -2,24 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
+
 const API_URL = 'https://openlibrary.org/search.json?q=programming';
-//needs two libraries react-router-dom and axios
 
-/*
-
-o Use https://openlibrary.org/search.json?q=programming
-o Display for each book:
-• Cover image (if available)
-• Title
-• Author(s)
-Each book should link to its details page using the book id
-Extract the book ID:
-const id = book.key.split('/').pop();
-ink to={`/books/${id}`}>
- {book.title}
-</Link>
-
-*/
 
 
 export default function Books() {
@@ -71,7 +56,7 @@ export default function Books() {
                             <img src={coverUrl} alt={`Cover for ${book.title}`} />
 
                             <h3>
-                                <Link to={`/books/${id}`}>
+                                <Link to={`/Details/${id}`}>
                                     {book.title}
                                 </Link>
                             </h3>
